@@ -1,0 +1,213 @@
+/* Movie Details Page Styles */
+.movie-details-container {
+    padding: 80px 0 50px;
+}
+
+.back-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.back-btn i {
+    transition: var(--transition);
+}
+
+.back-btn:hover i {
+    transform: translateX(-5px);
+}
+
+.movie-main {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.movie-poster-large {
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    width: 100%;
+    height: auto;
+}
+
+.movie-info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.movie-title-large {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+}
+
+.movie-meta {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.movie-rating-large {
+    background-color: var(--warning-color);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.movie-year {
+    font-weight: 600;
+}
+
+.movie-runtime {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.movie-genres {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.genre {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+}
+
+.movie-overview {
+    line-height: 1.8;
+}
+
+.movie-credits {
+    margin-top: 20px;
+}
+
+.credits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+    margin-top: 15px;
+}
+
+.person-card {
+    text-align: center;
+}
+
+.person-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.person-name {
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.person-role {
+    font-size: 0.9rem;
+    color: var(--gray-color);
+}
+
+.trailer-container {
+    margin: 30px 0;
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+}
+
+.trailer-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.similar-movies {
+    margin-top: 50px;
+}
+
+.similar-movies h2 {
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.loading-spinner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    min-height: 300px;
+    font-size: 1.2rem;
+}
+
+.loading-spinner i {
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+
+.error-message {
+    text-align: center;
+    padding: 50px 0;
+    color: var(--danger-color);
+}
+
+/* Responsive Design for Movie Page */
+@media (max-width: 768px) {
+    .movie-main {
+        grid-template-columns: 1fr;
+    }
+    
+    .movie-poster-large {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    
+    .credits-grid {
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    }
+    
+    .person-image {
+        height: 150px;
+    }
+}
+
+@media (max-width: 576px) {
+    .movie-title-large {
+        font-size: 2rem;
+    }
+    
+    .movie-meta {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+    
+    .credits-grid {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    }
+    
+    .person-image {
+        height: 120px;
+    }
+}

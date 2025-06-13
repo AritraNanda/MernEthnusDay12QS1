@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Details | CineVerse</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="movie.css">
+    <link rel="icon" href="assets/images/popcorn-icon.png">
+</head>
+<body>
+    <!-- Header (same as index.html) -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <i class="fas fa-film"></i>
+                    <span>CineVerse</span>
+                </a>
+                
+                <div class="search-box">
+                    <input type="text" id="search-input" placeholder="Search movies, TV shows...">
+                    <button id="search-btn"><i class="fas fa-search"></i></button>
+                </div>
+                
+                <div class="menu">
+                    <a href="index.html#popular" class="menu-link">Popular</a>
+                    <a href="index.html#top-rated" class="menu-link">Top Rated</a>
+                    <a href="index.html#upcoming" class="menu-link">Upcoming</a>
+                    <a href="#" class="menu-link" id="theme-toggle"><i class="fas fa-moon"></i></a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Movie Details Section -->
+    <main class="movie-details-container">
+        <div class="container">
+            <div class="movie-details">
+                <!-- Back button -->
+                <a href="index.html" class="back-btn">
+                    <i class="fas fa-arrow-left"></i> Back to Movies
+                </a>
+                
+                <!-- Movie content will be loaded here via JS -->
+                <div id="movie-content">
+                    <div class="loading-spinner">
+                        <i class="fas fa-spinner fa-spin"></i>
+                        <p>Loading movie details...</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Similar Movies Section -->
+            <section class="similar-movies">
+                <h2>Similar Movies</h2>
+                <div class="movies-grid" id="similar-movies">
+                    <!-- Similar movies will be loaded here via JS -->
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer (same as index.html) -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>CineVerse</h3>
+                    <p>The ultimate movie database for film enthusiasts. Discover, track, and explore movies from around the world.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">API</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 CineVerse. All movie data provided by <a href="https://www.themoviedb.org/" target="_blank">TMDb</a>.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

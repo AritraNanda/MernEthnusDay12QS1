@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineVerse | Ultimate Movie Database</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="day12qs1.css">
+    <link rel="icon" href="assets/images/popcorn-icon.png">
+</head>
+<body>
+    <!-- Header/Navbar -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <i class="fas fa-film"></i>
+                    <span>CineVerse</span>
+                </a>
+                
+                <div class="search-box">
+                    <input type="text" id="search-input" placeholder="Search movies, TV shows...">
+                    <button id="search-btn"><i class="fas fa-search"></i></button>
+                </div>
+                
+                <div class="menu">
+                    <a href="#popular" class="menu-link">Popular</a>
+                    <a href="#top-rated" class="menu-link">Top Rated</a>
+                    <a href="#upcoming" class="menu-link">Upcoming</a>
+                    <a href="#" class="menu-link" id="theme-toggle"><i class="fas fa-moon"></i></a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Discover & Track Movies</h1>
+                <p>Explore thousands of movies with details, ratings, and where to watch them</p>
+                <div class="hero-btns">
+                    <a href="#popular" class="btn btn-primary">Browse Movies</a>
+                    <a href="#" class="btn btn-secondary">Get Recommendations</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Popular Movies Section -->
+            <section id="popular" class="section">
+                <div class="section-header">
+                    <h2>Popular Movies</h2>
+                    <a href="#" class="see-all">See All</a>
+                </div>
+                <div class="movies-grid" id="popular-movies">
+                    <!-- Movies will be loaded here via JS -->
+                </div>
+            </section>
+
+            <!-- Top Rated Section -->
+            <section id="top-rated" class="section">
+                <div class="section-header">
+                    <h2>Top Rated</h2>
+                    <a href="#" class="see-all">See All</a>
+                </div>
+                <div class="movies-grid" id="top-rated-movies">
+                    <!-- Movies will be loaded here via JS -->
+                </div>
+            </section>
+
+            <!-- Upcoming Section -->
+            <section id="upcoming" class="section">
+                <div class="section-header">
+                    <h2>Upcoming Releases</h2>
+                    <a href="#" class="see-all">See All</a>
+                </div>
+                <div class="movies-grid" id="upcoming-movies">
+                    <!-- Movies will be loaded here via JS -->
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>CineVerse</h3>
+                    <p>The ultimate movie database for film enthusiasts. Discover, track, and explore movies from around the world.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">API</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 CineVerse. All movie data provided by <a href="https://www.themoviedb.org/" target="_blank">TMDb</a>.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="day12qs1.js"></script>
+</body>
+</html>
